@@ -15,7 +15,7 @@ body {
 
 .page-main {
   background-color: #FFFDF8;
-  padding: 60px 0;
+  padding: 0;
 }
 
 .wysiwyg-wrapper h1 {
@@ -76,12 +76,19 @@ body {
   margin: 60px auto 60px auto;
 }
 
+.reviews {
+  background-color: #f4efe2;;
+}
+
 .review {
   display: grid;
   grid-template-columns: 50px 1fr;
   grid-template-rows: 30px auto;
-  margin-bottom: 32px;
   column-gap: 22px;
+}
+
+.review:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .review__image-wrapper {
@@ -268,4 +275,56 @@ background-size: cover; */
 
 .menu-primary-container .sub-menu a:hover {
   color: #9F7303;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 80px 0;
+  background-image: url("img/background-darker.png"), url("img/background-footer-low.jpg");
+  background-color: #ae9f70;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Так как цвет футера темный, сразу пропишем белый цвет для любых техстовых элементов в футере% */
+.page-footer * {
+  color: #ffffff;
+}
+
+.page-footer__logo {
+  margin-bottom: 13px;
+}
+
+.page-footer__phone {
+  margin-bottom: 30px;
+}
+
+.page-footer__phone a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-footer__social {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.page-footer__social-item a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin: 0 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__social-item img {
+  max-width: 28px;
+  max-height: 28px;
 }
